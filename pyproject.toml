@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-dbt-common"
+version = "0.1.0"
+dependencies = [
+    "dbt-core==1.12.7",
+    "dbt-duckdb==1.11.1",
+    "faker==40.54.0",
+    "pandas==3.1.1"
+]
+
+[project.scripts]
+load = "python.loaddb:main"
+
+[tool.setuptools]
+packages = ["python"]

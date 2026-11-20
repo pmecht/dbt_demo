@@ -1,0 +1,12 @@
+sales_analytics:
+  target: dev
+
+  outputs:
+    dev:
+      type: duckdb
+      path: sales.duckdb
+      threads: 4
+    prod:
+      type: duckdb
+      path: sales.duckdb
+      threads: 4
